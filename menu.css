@@ -62,20 +62,21 @@ nav a{
 
 #menu{
     display: none;
+    margin-top: 40px;
 }
 #order{
     display: none;
+    margin-top: 40px;
 }
 #admin{
     display: none;
+    margin-top: 40px;
 }
 
 
 
 /* ////////////////////////////////    MENU//////////////////////////////////////////////////////////////////////////////////// */
-#menu{
-    margin-top: 40px;
-}
+
 .menu-h1{
     text-align: center;
     font-family: sans-serif;
@@ -127,16 +128,24 @@ nav a{
     font-size: 20px;
     border: none;
     background: none;
+    color: red;
+}
+.delBtn:active{
+    background: red;
+    border: none;
+    transition: 1s;
 }
 .editBtn{
-    font-size: 20px;
+    font-size: 21px;
     border: none;
     background: none;
+    color: blue;
 }
 .basBtn{
-    font-size: 20px;
+    font-size: 22px;
     border: none;
     background: none;
+    color: green;
 }
 .removeAll{
     display: none;
@@ -264,9 +273,7 @@ nav a{
 
 /* ///////////////////////////////////////////////////////////////// ORDER////////////////////////////////////////////////////////////////////////////////////////// */
 
-#order{
-    margin-top: 40px;
-}
+
 
 .order-h1{
     text-align: center;
@@ -274,11 +281,13 @@ nav a{
 }
 
 
-.basket {
-    display: none;
+.orderBas {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 30px;
     margin-top: 50px;
-    margin-bottom: 30px;
   }
   
   .orderBlock {
@@ -289,19 +298,17 @@ nav a{
     height: 150px;
     border-radius: 10px;
     background: #d9d9d9;
-    margin-top: 30px;
-    margin-left: 12pc;
+   
   }
   .orderImg {
     width: 180px;
     height: 120px;
     object-fit: cover;
-    border-radius: 20px;
-    margin-left: 20px;
-  }
-  .orderText {
-    margin-right: 200px;
-  }
+    border-radius:15px ;
+    padding: 10px;
+}
+
+
   .orderName {
     color: #000;
     font-family: Montserrat;
@@ -327,9 +334,9 @@ nav a{
     font-family: sans-serif;
     border-radius: 10px;
     background: #bd1d1d;
-    padding: 10px 20px;
     border: none;
-    margin-right: 30px;
+    width: 145px;
+    height: 40px;
   }
   .orderCount {
     display: flex;
@@ -373,15 +380,295 @@ nav a{
 
 
 
+@media(max-width:822px){
+    .orderBas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .orderBlock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 700px;
+        height: 120px;
+        border-radius: 10px;
+        background: #d9d9d9;
+       
+      }
+      .orderImg {
+        width: 140px;
+        height: 100px;
+        object-fit: cover;
+      }
+      .orderText {
+      }
+      .orderName {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1.08px;
+        font-family: sans-serif;
+        line-height: 60px;
+      }
+      .orderPrice {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.72px;
+        font-family: sans-serif;
+      }
+      .orderDelete {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        font-family: sans-serif;
+        background: #bd1d1d;
+        width: 120px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+      }
+      .orderCount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      .orderPlus {
+        color: #000;
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 1.08px;
+        width: 35px;
+        height: 30px;
+        border-radius: 10px;
+        background: #ddaa27;
+        border: none;
+      }
+      .orderMinus {
+        width: 35px;
+        border: none;
+        height: 32px;
+        border-radius: 10px;
+        background: #ddaa27;
+        color: #000;
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 1.08px;
+      }
+      .count {
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.72px;
+        font-family: sans-serif;
+      }
+    
+    
+    
+}
 
 
 
 
+@media(max-width:744px){
+    .orderBas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .orderBlock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 360px;
+        height: 100px;
+        border-radius: 10px;
+        background: #d9d9d9;
+       
+      }
+      .orderImg {
+        width: 100px;
+        height: 90px;
+        object-fit: cover;
+      }
+   
+      .orderName {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1.08px;
+        font-family: sans-serif;
+        line-height: 60px;
+      }
+      .orderPrice {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.72px;
+        font-family: sans-serif;
+      }
+      .orderDelete {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        font-family: sans-serif;
+        background: #bd1d1d;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+      }
+      .orderCount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      .orderPlus {
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1.08px;
+        width: 32px;
+        height: 30px;
+        border-radius: 10px;
+        background: #ddaa27;
+        border: none;
+      }
+      .orderMinus {
+        width: 30px;
+        border: none;
+        height: 32px;
+        border-radius: 10px;
+        background: #ddaa27;
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1.08px;
+      }
+      .count {
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.72px;
+        font-family: sans-serif;
+      }
+    
+    
+    
+}
 
 
 
 
-
+@media(max-width:320px){
+    .orderBas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .orderBlock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 290px;
+        height: 90px;
+        border-radius: 10px;
+        background: #d9d9d9;
+       
+      }
+      .orderImg {
+        width: 90px;
+        height: 85px;
+        object-fit: cover;
+      }
+   
+      .orderName {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1.08px;
+        font-family: sans-serif;
+        line-height: 60px;
+      }
+      .orderPrice {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.72px;
+        font-family: sans-serif;
+      }
+      .orderDelete {
+        color: #fff;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        font-family: sans-serif;
+        background: #bd1d1d;
+        width: 70px;
+        height: 22px;
+        padding: 0px 0px 1px 0px;
+        border-radius: 5px;
+        border: none;
+      }
+      .orderCount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      .orderPlus {
+        color: #000;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1.08px;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        background: #ddaa27;
+        border: none;
+      }
+      .orderMinus {
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        border: none;
+        background: #ddaa27;
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1.08px;
+      }
+      .count {
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.72px;
+        font-family: sans-serif;
+      }
+    
+    
+    
+}
 
 
 
